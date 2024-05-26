@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique des données - Météo Algérie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo_meteo_onm1-1.png" alt="Météo Algérie" class="logo">
+        <h1>Météo Algérie</h1>
+    </header>
+    <main>
+        <h2>Historique des données</h2>
+        <input type="date" id="search" placeholder="Rechercher par date..." onkeyup="filterTable()">
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>Date et Heure</th>
+                    <th>Température (°C)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données seront insérées ici par JavaScript -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button onclick="prevPage()">Précédent</button>
+            <button onclick="nextPage()">Suivant</button>
+        </div>
+        <div class="history-link">
+            <a href="index.html">Retour à l'accueil</a>
+        </div>
+    </main>
+    <script src="history.js"></script>
+</body>
+</html>
